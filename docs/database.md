@@ -234,22 +234,22 @@ erDiagram
 | is_achieved | INTEGER | ۰ یا ۱ |
 | created_at | TEXT | زمان ایجاد |
 
-## روابط
+## روابط جداول
 
-| جدول اول | جدول دوم | نوع رابطه | توضیح |
+| جدول مبدأ | جدول مقصد | نوع رابطه | توضیح |
 |---|---|---|---|
-| users | accounts | یک به چند | هر کاربر چند حساب دارد |
-| users | categories | یک به چند | هر کاربر می‌تواند دسته شخصی بسازد |
-| users | transactions | یک به چند | هر کاربر چند تراکنش دارد |
-| users | transfers | یک به چند | هر کاربر چند انتقال دارد |
-| users | tags | یک به چند | هر کاربر برچسب‌های خودش را دارد |
-| users | budgets | یک به چند | هر کاربر چند بودجه دارد |
-| users | recurring_transactions | یک به چند | هر کاربر چند تراکنش تکراری دارد |
-| users | savings_goals | یک به چند | هر کاربر چند هدف پس‌انداز دارد |
-| accounts | transactions | یک به چند | هر تراکنش در یک حساب ثبت می‌شود |
-| accounts | transfers | یک به چند (دو بار) | هر انتقال یک حساب مبدأ و یک حساب مقصد دارد |
-| accounts | recurring_transactions | یک به چند | هر تراکنش تکراری به یک حساب وصل است |
-| categories | transactions | یک به چند | هر تراکنش یک دسته دارد |
-| categories | budgets | یک به چند | هر بودجه برای یک دسته است |
-| categories | recurring_transactions | یک به چند | هر تراکنش تکراری یک دسته دارد |
-| transactions | tags | چند به چند | از طریق جدول transaction_tags |
+| users | accounts | one to many | هر کاربر چند حساب دارد |
+| users | categories | one to many | هر کاربر می‌تواند دسته شخصی بسازد |
+| users | transactions | one to many | هر کاربر چند تراکنش دارد |
+| users | transfers | one to many | هر کاربر چند انتقال دارد |
+| users | tags | one to many | هر کاربر برچسب‌های خودش را دارد |
+| users | budgets | one to many | هر کاربر چند بودجه دارد |
+| users | recurring_transactions | one to many | هر کاربر چند تراکنش تکراری دارد |
+| users | savings_goals | one to many | هر کاربر چند هدف پس‌انداز دارد |
+| accounts | transactions | one to many | هر تراکنش در یک حساب ثبت می‌شود |
+| accounts | transfers | one to many (دو بار) | هر انتقال یک حساب مبدأ و یک حساب مقصد دارد |
+| accounts | recurring_transactions | one to many | هر تراکنش تکراری به یک حساب وصل است |
+| categories | transactions | one to many | هر تراکنش یک دسته دارد |
+| categories | budgets | one to many | هر بودجه برای یک دسته است |
+| categories | recurring_transactions | one to many | هر تراکنش تکراری یک دسته دارد |
+| transactions | tags | many to many | از طریق جدول transaction_tags |

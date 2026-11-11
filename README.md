@@ -15,3 +15,11 @@
 ```bash
 sqlite3 mini_financial.db < database/schema.sql
 ```
+
+## مستندات
+
+- [SRS](docs/srs.md)
+- [Use Cases](docs/use-cases.md)
+- [Activity Diagrams](docs/activity-diagrams.md)
+- [Class Diagram](docs/class-diagram.md)
+- [DB Tables](docs/database.md)
